@@ -1,0 +1,18 @@
+'''Напишите программу, на вход которой даются четыре числа aa, bb, cc и dd, каждое в своей строке. Программа должна вывести фрагмент таблицы умножения для всех чисел отрезка [a; b][a;b] на все числа отрезка [c;d][c;d].
+Числа aa, bb, cc и dd являются натуральными и не превосходят 10, a \le ba≤b, c \le dc≤d.'''
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+h=('')
+print (h,end='\t')
+for i in range (c,d+1): #множетели. Строка 1
+  print (i,end='\t')
+print ()
+
+for i in range (a, b + 1):
+  print (i, end='\t')
+  for n in range (c,d+1):
+    print (i*n, end='\t')
+  print ()
